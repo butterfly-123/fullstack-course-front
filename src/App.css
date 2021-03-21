@@ -1,0 +1,42 @@
+.blockContainer {
+    display: inline-block;
+}
+
+.error-global {
+    position: absolute;
+    background: red;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #6E6B7B;
+    right: 1%;
+    top: 20px;
+    z-index: 100;
+}
+
+.error-global-close {
+    font-size: 25px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.popup {
+    text-align: center;
+    font-size: 14px;
+    color: #5E5873;
+    margin-bottom: 50px;
+
+}
+
+.popup span:hover {
+    cursor: pointer;
+}
+
+
+
+/* */
+
+
+

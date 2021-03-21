@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+}
+
+.displayBlock {
+    display: block;
+}
+
+.hidden {
+    visibility: visible;
+    width: 100%;
+}
+
+.leftBox {
+    width: 70%;
+}
+
+.rightBox {
+    width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+    .leftBox {
+        width: 100%;
+    }
+
+    .rightBox {
+        width: 0% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .rightBoxMobile {
+        width: 100%;
+        visibility: visible !important;
+        display: inline-flex;
+    }
+}
+
+.titleContainer {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.containerTittle {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .containerTittle {
+        width: auto;
+        padding-left: 0px;
+    }
+}

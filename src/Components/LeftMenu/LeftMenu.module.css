@@ -1,0 +1,86 @@
+.containerDisplayLeft {
+    margin-top: 10px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .containerDisplayLeft {
+        margin-top: 0px;
+        opacity: 1;
+        filter: alpha(opacity=20);
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        position: fixed;
+    }
+}
+
+.containerDisplayLeftNoMobile {
+    visibility: visible;
+}
+
+.containerDisplayLeftNo {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .containerDisplayLeftNo {
+        visibility: hidden;
+        position: absolute;
+        display: none;
+    }
+}
+
+.titleLeftContainer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.accountBalance {
+    color: #4DEB83;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.menuLeftContainer span {
+    display: block;
+}
+
+.menuLeftContainer p {
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.iconLeftContainer {
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.iconLeftContainer:hover {
+    color: #7367F0;
+    cursor: pointer;
+}
+
+
+.iconLeftContainer span {
+    padding-left: 20px;
+}
+
+.line {
+    background: #E0E0E0;
+    width: 100%;
+    margin-top: 50px;
+    height: 1px;
+}

@@ -1,0 +1,44 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.8);
+  z-index: 101;
+}
+
+.popupInner {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  border-radius: 3px;
+  background: white;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: #7367F0;
+}
+
+.text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.button {
+  margin-top: 50px;
+  text-align: center;
+}

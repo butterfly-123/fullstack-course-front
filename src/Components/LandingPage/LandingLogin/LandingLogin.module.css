@@ -1,0 +1,81 @@
+.title {
+    font-weight: bold;
+    font-size: 110px;
+    align-items: center;
+    text-align: center;
+    color: rgba(115, 103, 240, 0.17);
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .title {
+        width: 100%;
+        font-size: 64px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+}
+
+.subTitle {
+    width: 60%;
+    font-size: 18px;
+    text-align: center;
+    line-height: 4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .subTitle {
+        width: 80%;
+        line-height: 2;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+}
+
+.landingLogin img {
+    width: 400px;
+    height: 305px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    filter: drop-shadow(-30px 30px 0px rgba(115, 103, 240, 0.2));
+}
+
+@media only screen and (max-width: 768px) {
+    .landingLogin img {
+        width: 200px;
+        height: 152px;
+        margin-left: 80px;
+        margin-bottom: 75px;
+    }
+}
+
+
+.container {
+    display: flex;
+    height: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flow-root;
+        height: auto;
+    }
+}
+
+.landingLogin {
+    margin: auto;
+    width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .landingLogin {
+        width: 100%;
+    }
+}

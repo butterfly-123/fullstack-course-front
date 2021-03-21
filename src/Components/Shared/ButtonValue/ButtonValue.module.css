@@ -1,0 +1,20 @@
+.buttonValue {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid  #7367F0;
+    background-color:  #E3E1FC;
+    color: #7367F0;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+.button:hover {
+    cursor: pointer;
+}

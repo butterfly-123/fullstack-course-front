@@ -1,0 +1,12 @@
+.buttonMenu {
+    text-decoration: none;
+    color: #6E6B7B;
+}
+
+.buttonMenu:hover {
+    color: #7367F0;
+}
+
+span:hover {
+    color: #7367F0;
+}

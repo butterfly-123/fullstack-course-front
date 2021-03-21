@@ -1,0 +1,65 @@
+.landingHeader img {
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-image: url('../../Shared/Icons/Img/dragon.png');
+}
+
+@media only screen and (max-width: 768px) {
+    .landingHeader {
+        width: 100%;
+    }
+}
+
+.landingHeader button {
+    top: 60%;
+    left: 43%;
+    background: white;
+    color: #7367F0;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .landingHeader button {
+        top: 70%;
+        left: 20%;
+    }
+}
+
+.landingHeaderTitle {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.landingHeaderTitleContainer {
+    background-image: url('../../Shared/Icons/Img/dragon.png');
+    height: 500px;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.title {
+    padding-top: 40px;
+    font-size: 20px;
+    color: white;
+}
+.subTitle {
+    font-size: 48px;
+    color: white;
+}
+
+.subTitle:hover {
+    transform: scale(1.15);
+    transition: 2s;
+}

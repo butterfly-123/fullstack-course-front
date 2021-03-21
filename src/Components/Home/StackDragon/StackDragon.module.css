@@ -1,0 +1,40 @@
+.container {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: auto;
+        padding-left: 0px;
+    }
+}
+
+.titleContainer {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.subtitleContainer {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.displayFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.space {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.button {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}

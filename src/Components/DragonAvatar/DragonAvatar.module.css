@@ -1,0 +1,22 @@
+.dragonAvatarImageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dragonAvatarImagePattern {
+    position: absolute;
+}
+
+.dragonAvatarImageBackground {
+    position: absolute;
+}
+
+.dragonAvatarImage {
+    z-index: 0;
+}
+
+.traitsContainer {
+    text-align: center;
+    margin-top: 30px;
+}

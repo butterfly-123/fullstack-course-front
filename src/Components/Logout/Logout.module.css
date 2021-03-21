@@ -1,0 +1,19 @@
+.verticallyAligned {
+    display: flex;
+    align-items:center;
+    padding-top: 7px;
+}
+
+.verticallyAligned div {
+    margin-left: 20px;
+}
+
+.verticallyAligned span {
+    margin-bottom: 2px;
+    margin-left: 5px;
+}
+
+.verticallyAligned span:hover {
+    color: #7367F0;
+    cursor: pointer;
+}

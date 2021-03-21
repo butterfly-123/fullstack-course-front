@@ -1,0 +1,38 @@
+.container {
+    height: 500px;
+}
+
+.title {
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 44px;
+    text-align: center;
+    color: #7367F0;
+}
+
+@media only screen and (max-width: 768px) {
+    .title {
+        line-height: 2;
+        margin-top: 10px;
+    }
+}
+
+.subTitle {
+    vertical-align: middle;
+    margin: auto;
+    width: 70%;
+    font-size: 18px;
+    line-height: 250.5%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .subTitle {
+        line-height: 2;
+        margin-top: 0px;
+        width: 80%;
+    }
+}
+

@@ -1,0 +1,161 @@
+.container {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: auto;
+        padding-left: 0px;
+    }
+}
+
+.container table {
+    padding: 10px;
+    width: 100%;
+}
+
+.container table tr th{
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 20px;
+}
+.container table tr td:first-child {
+    padding: 30px 0px;
+    width: 50%;
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container table tr td:first-child {
+        padding: 30px 0px;
+        width: 50%;
+        font-size: 20px;
+        font-weight: normal;
+    }
+}
+
+.container table tr td:last-child {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    width: 50%;
+    padding: 30px 0px;
+}
+
+.container ul li {
+    list-style: none;
+}
+
+.button {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.traitsBox {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .traitsBox {
+        width: 50%;
+    }
+}
+
+.accountDragonRowInput {
+    background: #F5F5F5;
+    width: 35%;
+    height: 20px;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #7367F0;
+}
+
+.accountDragonRowInputEdit {
+    border: 1px solid #7367F0;
+    outline: none;
+    width: 35%;
+    height: 20px;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.tooltipText {
+    color: #7367F0;
+    font-size: 12px;
+    display: block;
+}
+
+.tooltipTextPublic {
+    color: #7367F0;
+    font-size: 12px;
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .tooltipTextPublic {
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+
+.titleContainer {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/*.subtitleContainer {*/
+/*    font-size: 20px;*/
+/*    font-weight: normal;*/
+/*    text-align: center;*/
+/*}*/
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+/*.line {*/
+/*    background: #E0E0E0;*/
+/*    width: 100%;*/
+/*    margin-top: 10px;*/
+/*    height: 1px;*/
+/*}*/
+
+/*.displayLine {*/
+/*    display: -webkit-box;*/
+/*}*/
+
+.iconInfo {
+    margin-left: 10px;
+    display: inline-flex;
+    position: absolute;
+    margin-top: 7px;
+}
+
+.iconInfoPublic {
+    margin-left: -130px;
+    display: inline-flex;
+    position: absolute;
+    margin-top: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+    .iconInfoPublic {
+        margin-left: -5px;
+    }
+}
+
+
+
+

@@ -1,0 +1,57 @@
+.containerDisplayRight {
+    float: right;
+    right: 20px;
+    position: relative;
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .containerDisplayRight {
+        right: 5px;
+    }
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    .hidden {
+        visibility: visible;
+    }
+}
+
+.logo {
+    width: 35px;
+    height: 25px;
+}
+
+.iconLeft {
+    margin-top: 5px;
+    margin-left: 10px;
+    display: inline-flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .iconLeft {
+        margin-left: 60px;
+    }
+}
+
+.iconLeft:hover {
+    cursor: pointer;
+}
+
+.iconMenu {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .iconMenu {
+        margin-top: 5px;
+        margin-left: 10px;
+        display: inline-flex;
+    }
+}
+

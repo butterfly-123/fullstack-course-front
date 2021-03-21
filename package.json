@@ -19,6 +19,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "start": "node ./node_modules/serve/bin/serve.js -s build",
     "dev": "PORT=3002 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

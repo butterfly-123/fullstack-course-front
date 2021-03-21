@@ -39,6 +39,10 @@ export const fetchFromAccount = ({
  }) => dispatch => {
     dispatch({ type: FETCH_TYPE });
 
+    if (!options.headers) {
+        options.headers = {}
+    }
+    options.headers['Authorization'] = localStorage.getItem('sessionId');
     return fetch(`${domain.api}/account/${endpoint}`, options)
         .then(res => {
             if (res.status === 500) {
@@ -59,6 +63,13 @@ export const fetchFromAccount = ({
                     errors: json.errors
                 });
             } else {
+                if (endpoint === 'login' || endpoint === 'signup') {
+                    localStorage.setItem('sessionId', json.sessionId);
+                    // Save to local storage for now
+                }
+                console.log(json);
+
+
                 dispatch({
                     type: SUCCESS_TYPE,
                     ...json
@@ -96,7 +107,8 @@ export const signup = ({ username, password }) => fetchFromAccount ({
 export const logout = () => fetchFromAccount ({
     endpoint: 'logout',
     options: {
-        credentials: 'include'
+        credentials: 'include',
+        headers: {}
     },
     FETCH_TYPE: ACCOUNT.FETCH,
     ERROR_TYPE: ACCOUNT.FETCH_ERROR,
@@ -119,7 +131,8 @@ export const login = ({ username, password }) => fetchFromAccount ({
 export const authenticated = () => fetchFromAccount ({
     endpoint: 'authenticated',
     options: {
-        credentials: 'include'
+        credentials: 'include',
+        headers: {}
     },
     FETCH_TYPE: ACCOUNT.FETCH,
     ERROR_TYPE: ACCOUNT.FETCH_ERROR,

@@ -2,11 +2,16 @@ import config from "../config";
 
 
 export const save = ({ dragonId, nickname, isPublic, saleValue, sireValue }) => dispatch => {
-    fetch(`${config.api}/dragon/update`, {
+    const options = {
         method: 'PUT',
         headers: { 'Content-Type' : 'application/json' },
         body: JSON.stringify({ dragonId, nickname, isPublic, saleValue, sireValue })
-    })
+    }
+
+    options.headers['Authorization'] = localStorage.getItem('sessionId');
+
+
+    fetch(`${config.api}/dragon/update`, options)
         .then(res => res.json())
         .then(json => {
 

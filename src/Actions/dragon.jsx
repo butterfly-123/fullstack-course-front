@@ -4,9 +4,14 @@ import domain from '../config';
 export const fetchDragon = () => dispatch => {
     dispatch({ type: DRAGON.FETCH })
 
-    return fetch(`${domain.api}/dragon/new`, {
-        credentials: 'include'
-    })
+    const options = {
+        credentials: 'include',
+        headers: {}
+    }
+
+    options.headers['Authorization'] = localStorage.getItem('sessionId');
+
+    return fetch(`${domain.api}/dragon/new`, options)
         .then(res => res.json())
         .then(json => {
             if (json.type === 'error') {

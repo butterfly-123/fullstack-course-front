@@ -5,8 +5,11 @@ export const fetchPublicDragons = () => dispatch => {
     dispatch({ type: PUBLIC_DRAGONS.FETCH });
 
     console.log('din don di din')
+    const options = {headers: {}}
 
-    return fetch(`${domain.api}/dragon/public-dragons`)
+    options.headers['Authorization'] = localStorage.getItem('sessionId');
+
+    return fetch(`${domain.api}/dragon/public-dragons`, options)
         .then(res => res.json())
         .then(json => {
             if (json.types === 'error') {

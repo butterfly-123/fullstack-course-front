@@ -4,7 +4,14 @@ import domain from '../config';
 export const fetchGeneration = () => dispatch => {
     dispatch({ type: GENERATION.FETCH })
 
-    return fetch(`${domain.api}/generation`)
+    const options = {
+        credentials: 'include',
+        headers: {}
+    }
+
+    options.headers['Authorization'] = localStorage.getItem('sessionId');
+
+    return fetch(`${domain.api}/generation`, options)
         .then(res => res.json())
         .then(json => {
             if (json.type === 'error') {

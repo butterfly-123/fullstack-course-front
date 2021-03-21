@@ -2,12 +2,17 @@ import config from "../config";
 import history from "../history";
 
 export const mate = ({ matronDragonId, patronDragonId }) => () => {
-    fetch(`${config.api}/dragon/mate`, {
+    const options = {
         method: 'POST',
         credentials: 'include',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ matronDragonId, patronDragonId })
-    }).then(response => response.json())
+    }
+
+    options.headers['Authorization'] = localStorage.getItem('sessionId');
+
+
+    fetch(`${config.api}/dragon/mate`, options).then(response => response.json())
         .then(json => {
 
             if (json.type !== 'error') {

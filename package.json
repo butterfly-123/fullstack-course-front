@@ -15,7 +15,8 @@
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
     "react-redux": "^5.0.7",
-    "react-content-loader": "^5.1.1"
+    "react-content-loader": "^5.1.1",
+    "serve": "11.3.2"
   },
   "scripts": {
     "dev": "PORT=3002 react-scripts start",

@@ -6,8 +6,6 @@ import {connect} from "react-redux";
 
 class App extends React.Component {
     displayToast() {
-        console.log(this.props);
-
         return (
             <div  className={'error-global'}>
                 <b>
@@ -31,6 +29,7 @@ class App extends React.Component {
 
         return (
             <div>
+                <h1>Test</h1>
                 {this.props.error.errorType === 'GLOBAL_ERROR_500' ?
                      this.displayToast(): null
                 }
